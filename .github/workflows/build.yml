@@ -1,4 +1,4 @@
-name: Build on PR created by the pranav desai
+name: Build on PR created by the pranav desai it is the best
 on:
   pull_request:
     branches:
