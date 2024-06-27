@@ -30,7 +30,7 @@ jobs:
 
 
     # build and deploy to the aws and serve the file using nginx
-
+     # Path: week-18-2-ci-cd/.github/workflows/deploy.yml
     - name: Deploy to EC2
       uses: appleboy/ssh-action@master
       with:
