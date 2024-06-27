@@ -27,12 +27,15 @@ jobs:
         push: true
         tags: pranavkumar9529/paytem2:latest  # Replace with your Docker Hub username and repository
 
-     - name : see the ssh keys and the host
-       run: echo ${{ secrets.SSH_HOST }} ${{ secrets.SSH_USERNAME }} ${{ secrets.SSH_PRIVATE_KEY }}
-
+     - - name: See the SSH keys and the host
+  run: |
+    echo "Host: ${{ secrets.SSH_HOST }}"
+    echo "Username: ${{ secrets.SSH_USERNAME }}"
+    # Avoid echoing the SSH_PRIVATE_KEY for security reasons
     # build and deploy to the aws and serve the file using nginx
-     # Path: week-18-2-ci-cd/.github/workflows/deploy.yml
-     # Compare this snippet from week-18-2-ci-cd/.github/workflows/build.yml:
+    # Path: week-18-2-ci-cd/.github/workflows/deploy.yml
+    # Compare this snippet from week-18-2-ci-cd/.github/workflows/build.yml:
+
     - name: Deploy to EC2
       uses: appleboy/ssh-action@master
       with:
