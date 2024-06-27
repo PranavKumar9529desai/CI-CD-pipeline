@@ -28,3 +28,4 @@ jobs:
         tags: pranavkumar9529/paytem2:latest  # Replace with your Docker Hub username and repository
 
     # Replace with your Docker Hub username and repository
+    # MADE SOME CHANGES IN THE DOCKERFILE
