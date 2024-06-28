@@ -31,7 +31,7 @@ jobs:
 
     - name: Verify Pushed Image
       run: docker pull pranavkumar9529/paytem2:latest
-
+   # finish the job by deploying the image to the EC2 instance
     - name: Deploy to EC2
       uses: appleboy/ssh-action@master
       with:
