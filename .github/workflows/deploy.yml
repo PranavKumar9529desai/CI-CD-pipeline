@@ -27,7 +27,7 @@ jobs:
         push: true
         tags: pranavkumar9529/paytem2:latest  # Replace with your Docker Hub username and repository
 
-   # Deploy to EC2
+   # deploy to the aws
    # This step will deploy the latest image to the EC2 instance
     - name: Deploy to EC2
       uses: appleboy/ssh-action@master
